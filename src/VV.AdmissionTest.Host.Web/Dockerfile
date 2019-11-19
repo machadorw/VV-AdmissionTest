@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web.csproj", "src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web/"]
-RUN dotnet restore "src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web.csproj"
+COPY ["src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web.csproj", "src/VV.AdmissionTest.Host.Web/"]
+RUN dotnet restore "src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web.csproj"
 COPY . .
-WORKDIR "/src/src/VV.AdmissionTest.Host.Web/VV.AdmissionTest.Host.Web"
+WORKDIR "/src/src/VV.AdmissionTest.Host.Web"
 RUN dotnet build "VV.AdmissionTest.Host.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish

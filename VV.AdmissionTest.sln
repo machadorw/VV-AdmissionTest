@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VV.AdmissionTest.Database.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VV.AdmissionTest.Database.MSSQL", "src\VV.AdmissionTest.Database.MSSQL\VV.AdmissionTest.Database.MSSQL.csproj", "{C253B311-D43D-444F-BF5C-54515D74700F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VV.AdmissionTest.Host.Web", "src\VV.AdmissionTest.Host.Web\VV.AdmissionTest.Host.Web\VV.AdmissionTest.Host.Web.csproj", "{1D408C21-7F98-4C18-96B0-460EECD1F48F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VV.AdmissionTest.Host.Web", "src\VV.AdmissionTest.Host.Web\VV.AdmissionTest.Host.Web.csproj", "{22323091-4CAA-46EB-A5D1-590ACA018658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{C253B311-D43D-444F-BF5C-54515D74700F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C253B311-D43D-444F-BF5C-54515D74700F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C253B311-D43D-444F-BF5C-54515D74700F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D408C21-7F98-4C18-96B0-460EECD1F48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D408C21-7F98-4C18-96B0-460EECD1F48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D408C21-7F98-4C18-96B0-460EECD1F48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D408C21-7F98-4C18-96B0-460EECD1F48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22323091-4CAA-46EB-A5D1-590ACA018658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22323091-4CAA-46EB-A5D1-590ACA018658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22323091-4CAA-46EB-A5D1-590ACA018658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22323091-4CAA-46EB-A5D1-590ACA018658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +59,7 @@ Global
 		{43621A97-7786-4F6D-A0D2-040EF8C025F4} = {3BF17546-4596-49D3-B0BE-D17AF1D3705F}
 		{146EC345-23D7-45AA-9EFE-DA4B0927E465} = {43621A97-7786-4F6D-A0D2-040EF8C025F4}
 		{C253B311-D43D-444F-BF5C-54515D74700F} = {43621A97-7786-4F6D-A0D2-040EF8C025F4}
-		{1D408C21-7F98-4C18-96B0-460EECD1F48F} = {3DE24605-B86F-44EC-A4CE-174984A3C522}
+		{22323091-4CAA-46EB-A5D1-590ACA018658} = {3DE24605-B86F-44EC-A4CE-174984A3C522}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51FB8D58-9E06-4DB0-A1DC-FD7919CFB237}

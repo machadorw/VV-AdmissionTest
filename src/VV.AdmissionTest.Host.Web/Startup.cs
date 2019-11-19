@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace VV.AdmissionTest.Host.Web
 {
@@ -29,7 +26,6 @@ namespace VV.AdmissionTest.Host.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            ConfigureSwagger(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,35 +42,7 @@ namespace VV.AdmissionTest.Host.Web
             }
 
             app.UseHttpsRedirection();
-
-            // swagger
-            app.UseSwagger(options =>
-            {
-                options.RouteTemplate = "docs/swagger.json";
-            });
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint("v1/swagger.json", "Find Friends v1");
-                options.RoutePrefix = "docs";
-            });
-
             app.UseMvc();
-        }
-
-        private void ConfigureSwagger(IServiceCollection services)
-        {
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("v1", new Info
-                {
-                    Title = "Via Varejo Admission Test",
-                    Description = "Service to find closest friends",
-                    Version = "v1"
-                });
-                //string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //options.IncludeXmlComments(xmlPath);
-            });
         }
     }
 }
